@@ -62,3 +62,10 @@ $("#titulo5").click(function(){
 });
 
 
+$(document).ready(function() {
+  var $video;
+  $("#exampleModal").on("hide.bs.modal", function(e) {
+    $('.video').each(function(){
+      $(this).get(0).pause();
+    })
+  })});
